@@ -1,0 +1,120 @@
+
+.logo img{
+  text-shadow: 0 0 50px #0f0,
+               0 0 100px #0f0,
+               0 0 150px #0f0,
+               0 0 200px #0f0,
+               0 0 250px #0f0;
+animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    filter:hue-rotate(0deg);
+  }
+  100%
+  {
+    filter:hue-rotate(360deg);
+  }
+}/*hhhhhh*/
+.MainNav ul li:hover {
+  animation:rotate 2s linear infinite;
+}
+@keyframes rotate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(8deg);
+  }
+  750%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(-8deg);
+  }
+}
+@media all and (max-width: 968px) {
+  .MainNav ul li:hover {
+    animation:rotate 2s linear infinite;
+  }
+  @keyframes rotate
+  {
+    0%
+    {
+      transform: rotate(0deg);
+    }
+    50%
+    {
+      transform: rotate(1deg);
+    }
+    750%
+    {
+      transform: rotate(0deg);
+    }
+    100%
+    {
+      transform: rotate(-1deg);
+    }
+  }
+
+
+}
+
+ #grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  .grid {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(10, 10, 10);
+    padding: 20px;
+    font-size: 20px;
+    text-align:justify;
+    font-family: Helvetica;
+  }
+  #grid-container .grid img{
+    height: 256px;
+    width: 100%;  
+  }
+  
+  #grid-container .grid:hover{
+   /* position:relative;*/
+    /*top:-25px;
+    left:-35px;*/
+    /*width:500px;
+    height:auto;
+    display:block;*/
+    /*z-index:999;
+    /*background-color: gray;*/
+    border: 10px solid rgb(170, 170, 172);
+    box-shadow: rgb(161, 161, 161);
+  }
+  /*
+  #grid-container:focus{
+   
+  }*/
+  @media (max-width: 800px) {
+    #grid-container{
+      grid-template-columns: auto ;
+    }
+    #grid-container .grid{
+      width:auto;
+    }
+    #grid-container .grid:hover{
+      box-shadow:  0 0 0.5px rgb(36, 39, 36),
+      0 0 1px rgb(36, 39, 36),
+      0 0 10px rgb(36, 39, 36),
+      0 0 20px rgb(36, 39, 36),
+      0 0 25px rgb(36, 39, 36);
+    }
+    
+  }

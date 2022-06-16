@@ -1,0 +1,86 @@
+
+.logo img{
+  
+ 
+  animation:rotate 5s linear infinite;
+}
+@keyframes rotate
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(8deg);
+  }
+  75%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(-8deg);
+  }
+}
+#flex-container {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    }
+    #flex-container .flex {
+      margin:4em .2em;
+      width:calc(33% - .4em);
+      box-sizing: border-box;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      background-color: rgba(224,224,179,0.2);
+  
+  }
+  #flex-container .flex1 {
+    margin:2em .2em;
+    width:calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30),
+                0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(224,224,179,0.2);
+
+}
+
+  #flex-container p{
+    width:90%;
+    padding:0;
+    margin:1em auto;
+  }
+  #flex-container h1{
+    font-size: 21px;
+    width:90%;
+    padding:0;
+    margin:1em auto;
+  }
+  #flex-container .flex img{
+  height: 256px;
+  width: 100%;
+  }
+  #flex-container .flex1 img{
+    height: 256px;
+    width: 100%;
+    }
+  #flex-container .flex:hover{
+     background: gainsboro;
+     
+  }
+  #flex-container .flex1:hover{
+    background: gainsboro;
+    
+ }
+ @media (max-width: 800px) {
+  #flex-container{
+    flex-direction: column;
+  }
+  #flex-container .flex{
+    width: 98%;
+  }
+  #flex-container .flex1{
+    width: 98%;
+  }
+}
