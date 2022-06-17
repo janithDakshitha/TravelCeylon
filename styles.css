@@ -231,6 +231,7 @@ width: 100%;
   margin:1em auto;
 }
 #IndexConatainer p{
+  font-size: 18px;
   text-align: left;
   width:90%;
   padding:0;
@@ -457,6 +458,7 @@ width: 100%;
   margin: 5px;
 }
 #WildConatainer p{
+  font-size: 18px;
   text-align: left;
   width:90%;
   padding:0;
@@ -540,11 +542,11 @@ margin-right: 2px;
 .section-5 iframe{
   
 }*/
- table {
+ /*#WildConatainer table {
   width: 100%;
   border-collapse: collapse;
 }
-th, td {
+#WildConatainer th, #WildConatainer td {
   text-align: left;
   padding: 8px;
 }
@@ -555,6 +557,26 @@ th {
   background-color: #04AA6D;
   color: white;
 }/*********/
+
+
+#WildConatainer table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#WildConatainer th{
+  text-align: left;
+  padding:5px ;
+  color: #ffffff;
+  background: #5a5457;
+  font-weight: normal;
+}
+#WildConatainer td{
+  padding: 10px 5px;
+}
+
+
+/**/
 #image-wildflex{
   display: flex;
   flex-flow: row wrap;
@@ -606,9 +628,7 @@ width: 100%;
   font-style: italic;
 
 }
-.wild-1 iframe{
-  
-}
+
 
 #BeachesContainer {
   display: flex;
@@ -640,6 +660,7 @@ width: 100%;
 
 #BeachesContainer p{
   text-align: justify;
+  font-size: 20px;
   width:90%;
   padding:0;
   margin:1em auto;
@@ -703,9 +724,9 @@ width: 100%;
   text-align: center;
   font-size: 20px;
 }
-.section-12 h3{
-  
-  font-size: 25px;
+.section-12 p{
+  margin: 2%;
+  font-size: 18px;
 }
   #SurfingContainer {
     display: flex;
@@ -720,7 +741,8 @@ width: 100%;
       background-color: rgba(224,224,179,0.2);
   
   }
-  #SurfingContainer h3, #SurfingContainer p{
+   #SurfingContainer p{
+    font-size: 20px;
     width:90%;
     padding:0;
     margin:1em auto;
@@ -758,7 +780,11 @@ width: 100%;
 }*/
 .section-13 h1{
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+}
+.section-13 p{
+  margin: 2%;
+  font-size: 18px;
 }
 #HikingContainer {
   display: flex;
@@ -774,6 +800,7 @@ width: 100%;
 
 }
  #HikingContainer p{
+  font-size: 20px;
   width:90%;
   padding:0;
   margin:1em auto;
@@ -804,7 +831,11 @@ width: 100%;
 }*/
 .section-14 h1{
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+}
+.section-14{
+  margin: 2%;
+  font-size: 18px;
 }
 #SafariContainer {
   display: flex;
@@ -859,26 +890,32 @@ width: 100%;
   }
 }
 .section-16 h1{
-  text-align:left;
+  text-align:center;
   font-size: 25px;
   font-style: italic;
   text-decoration:none;
   
 }
+.section-16 p{
+  margin: 2%;
+  font-size: 18px;
+}
 .section-17 h1{
-  text-align:left;
+  text-align:center;
   font-size: 40px;
   font-style: italic;
   text-decoration:none;
   
 }
 .links p{
+  margin: 2%;
   text-align:left;
   font-size: 20px;
   font-style: italic;
   text-decoration:none;
 }
 .links .button{
+ 
   background-color: #4e534f;
   border: none;
   color: white;
@@ -939,6 +976,9 @@ width: 100%;
  .purches-page th:last-child{
   text-align: right;
  }
+ .purches-page{
+  margin: 2%;
+ }
  @media only screen and (max-width:600px){
   .purches-info p{
 display: none;
@@ -993,7 +1033,9 @@ float: right;
   align-items: center;
   padding: 150px 0;
 }
-
+.home-info{
+  margin: 2%;
+}
 .btn1{
   font-size: 1rem;
   font-weight: 400;
@@ -1011,7 +1053,9 @@ float: right;
 
 
 /*donation form area*/
-
+.donateSection{
+  margin: 2%;
+}
 #donation-area{
  
   justify-content:space-between;
