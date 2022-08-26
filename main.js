@@ -235,9 +235,14 @@ function updateCartTotal(){
 
 btnpurchase.addEventListener("click",placeOrder)
 function placeOrder(){
-    var cartItems = document.getElementsByClassName('cart-items')[1] 
+    if(finalquant>0){
+    var cartItems = document.getElementsByClassName('cart-items')[1]    
     alert('Thank you for your purchase')
     location.reload()
+    }
+    else{
+        alert('Please add items to the cart')
+    }
 }
 
 Addfav.addEventListener("click",Addfavb)
@@ -310,7 +315,7 @@ function countnumberoftickets(){
     if(finalquant>3){
         loyaltypoints=20*finalquant;
        alert(`Congratulations! you earned ${loyaltypoints} of loyalty points`)
-        console.log(loyaltypoints)
+        
         let loyaltyp={Loyaltypoint:loyaltypoints}
         localStorage.setItem('loyal',JSON.stringify(loyaltyp))
     }
