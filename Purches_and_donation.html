@@ -59,10 +59,136 @@
                         <h2>We promise that the donations you make to <span>Travel ceylon</span> will be used to develop tourist destinations in our country</h2>
                         
                         <div class="buttons">
-                            <a href="#dnt" class="btn1">Donate now</a>
+                            <a href="#donationInfo" class="btn1">Donate now</a>
                         </div>
                     </div>
         </div>
+
+
+
+        <div class="donation-container">
+
+          <form id="donationInfo">
+      
+             
+      
+                  <div id="personal-infor">
+      
+                      <h3 class="title">Donation Details</h3>
+      
+                      <div class="Donation-details">
+                          <span>Full Name :</span>
+                          <input type="text" placeholder="Name" id="FN" required>
+                      </div>
+                      
+                      <div class="Donation-details">
+                          <span>Address :</span>
+                          <input type="text" placeholder="Address" id="Add" required>
+                      </div>
+                     
+      
+                      
+      
+                  </div>
+      
+                  <div class="payment-gateway">
+      
+                      <h3 class="title">Payment Options</h3>
+      
+                      <div class="Donation-details">
+                          <span>Select Card Type :</span>
+                          
+                          
+                          <label>
+                              <input type="radio" name="card" value="Master" id="card" checked>
+                              <img src="images/png-transparent-mastercard-mastercard-logo-cdr-text-orange.png">
+                            </label>
+                          
+                            <label>
+                              <input type="radio" name="card" value="Visa" id="card">
+                              <img src="images/visa-logo-6F4057663D-seeklogo.com.png">
+                            </label>
+      
+                      </div>
+                      <div class="Donation-details">
+                          <span>Name on card :</span>
+                          <input type="text" placeholder="Name" id="NOC" required >
+                      </div>
+                      <div class="Donation-details">
+                          <span>Card number :</span>
+                          <input type="number" placeholder="####-####-####-###"   maxlength="16" id="CN" required>
+                      </div>
+                      
+                          <div class="Donation-details">
+                              <span>CVV :</span>
+                              <input type="number" placeholder="123" size="3" maxlength="3" id="CVV" required>
+                          </div>
+                          <div class="Donation-details">
+                              <span>Donation amount :</span>
+                              <select name="Donation-amount" id="Donation-amount">
+                                  <option value="100">100 LKR </option>
+                                  <option value="250">250 LKR</option>
+                                  <option value="500">500 LKR</option>
+                                  <option value="1000">1000 LKR</option>
+                                  <option value="2500">2500 LKR</option>
+                                  <option value="5000">5000 LKR</option>
+                                  <option value="10000">10000 LKR</option>
+                              </select>
+                          </div>
+      
+                      </div>
+      
+                      <div class="Donation-flex">
+                          <div class="Donation-details">
+                              <span>Expiry year :</span>
+                              <select name="donation-year" id="donation-year">
+                                  <option value="2023">2023 </option>
+                                  <option value="2024">2024</option>
+                                  <option value="2025">2025</option>
+                                  <option value="2026">2026</option>
+                                  <option value="2027">2027</option>
+                                  <option value="2028">2028</option>
+                                  <option value="2029">2029</option>
+                              </select>
+                          </div>
+                          <div class="Donation-details">
+                              <span>Expiry month :</span>
+                              <select name="donation-month" id="donation-month">
+                                  <option value="January">January </option>
+                                  <option value="February">February</option>
+                                  <option value="March">March</option>
+                                  <option value="April">April</option>
+                                  <option value="May">May</option>
+                                  <option value="June">June</option>
+                                  <option value="July">July</option>
+                                  <option value="Agust">Agust</option>
+                                  <option value="September">September</option>
+                                  <option value="October">October</option>
+                                  <option value="November">November</option>
+                                  <option value="December">December</option>
+          
+                                  
+                              </select>
+                      </div>
+      
+                  </div>
+          
+           
+          <div id="submit1">
+             <!-- <input type="submit" value="Donate now" class="submit-btn" id="submit-btn"  onclick="openpopupmessage()">-->
+              <input type="submit" value="Donate now" class="submit-btn" id="submit-btn"  >
+                  <div class="popup-message" id="popup-message">
+                      <img src="images/card_img.png" >
+                      <h2>Thanks you!</h2>
+                      <div id="message">
+                      <p>Your donation succ</p></div>
+                      <button type="button" id="closepopupmessage" >OK</button>
+                  </div>
+      
+      
+          </div>
+          </form>
+      
     
 </section>
 <hr>
@@ -232,6 +358,7 @@
       https://www.pinterest.com/pin/404338872768968266/
       https://twinklebunnies.com/product/yellow-batik-shirt-sarong/-->
     </footer>
+    <script src="donation.js"></script>
       </body>
     
     </html>

@@ -144,6 +144,120 @@
       </section>
     </div>
   </section>
+
+  <div class="ticket-box">
+    <h1>Safari Ticket Booking</h1>
+    <form id="TicketBooking"></form>
+    
+      <div class="user-box">
+        <label for="TType">Ticket Type (***For Children Under 3, Entrance is Free***)</label>
+        <select id="TType2" name="TType">
+            <option value="n">Choose Ticket Type</option>
+            <option value=5000>Foreign Adult Pass</option>
+            <option value=2500>Foreign Child Pass</option> 
+            <option value=1000>Local Adult Pass</option> 
+            <option value=500>Local Child Pass</option>
+            <option value=4500>Annual Pass-Local</option> 
+            <option value=15000>Annual Pass-Foreign</option> 
+            
+        </select> 
+       
+      </div>
+      <div class="user-box">
+        <label for="numT">Number of tickets: </label>
+        <input type="number" name="numT" id="numT" min="1" value="0" required> 
+        
+      </div>
+      <div class="user-box1">
+        <label for="Duration">Duration: </label>
+        <div class="radiob">
+            
+                <input type="radio" id="Duration1" name="duration" value="3 Hours" required checked>
+                <label for="du1">3 Hours</label> 
+           
+                <input type="radio" id="Duration2" name="duration" value="1/2 Day" > 
+                <label for="du2">1/2 Day</label>
+            
+                <input type="radio" id="Duration3" name="duration" value="Full Day">
+                <label for="du3">Full Day</label> 
+           
+                <input type="radio" id="Duration4" name="duration" value="2 Days">
+                <label for="d4">2 Days</label> 
+            
+        
+    </div>
+       
+      </div>
+      
+      <div class="user-box">
+        <label for="numFT">Number of Food Tockens: </label>
+        <input type="number" name="numFT" id="numFT" min="0" value="0" > 
+        
+      </div>
+      <div class="user-box">
+        <label for="cc">Current-cost(Rs:)</label>
+        <p id="current-cost">00.00</p> 
+
+      </div>
+      
+      <a>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button type="submit" id="add">Add To Order</button>
+      </a>
+
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button class="btn btn-primary btn-addFav" type="button" id="addfav" >Add To Faviourite</button>
+      </a>
+      <a>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button class="btn btn-primary btn-orderFav" type="button" id="loadFav" >Order Faviourite</button>
+      </a>
+
+      <section class="currentOrder">
+        <h2 class="OrderH">Overall Order</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE(Rs:)</span>
+            <span class="cart-quantity cart-header cart-column">NO. PASSES</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.  0</span>
+        </div>
+        <a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button class="btn btn-primary btn-purchase" type="button" id="placeo">Place order </button>
+        </a>
+        <a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button class="btn btn-primary btn-checkLoyalty" type="button" id="checkLoyalty" >CHECK LOYALTY POINTS</button>
+        </a>
+    </section>
+  </div>
+  <script src="main.js"></script>
+
+
+
+
+
 </article>
 <br>
 <section class="links">
@@ -152,6 +266,7 @@
   <a href="Heritage_location2.html" class="button">Polonnaruwa</a>
 </section>
 <hr>
+</body>
 
 
       <footer>

@@ -1206,3 +1206,485 @@ footer{
     margin: 5px 0;
   }
 }
+
+
+
+/*///////////////////////////////////////////////ticket booking*/
+
+.ticket-box {
+  
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 100%;
+  padding: 40px;
+ margin-left: 13%;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.ticket-box h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+ 
+}
+
+.ticket-box .user-box {
+ 
+}
+
+.ticket-box .user-box input, .ticket-box .user-box p {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.ticket-box .user-box select {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(255, 250, 250);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.ticket-box .user-box select option {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgb(5, 5, 5);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.radiob {
+ 
+ 
+  padding: 10px 0;   
+  
+  background: transparent;
+  
+  
+}
+.ticket-box .user-box1 {
+
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.ticket-box .user-box1 label {
+  /*position: absolute;*/
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+ /* transition: .5s;*/
+}
+[type=radio]{
+  
+  cursor: pointer;
+  
+}
+
+ 
+/*[type=radio]:checked + img {
+  outline: 5px solid rgb(42, 32, 126);
+}*/
+.ticket-box .user-box label {
+  /*position: absolute;*/
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+ /* transition: .5s;*/
+}
+
+.ticket-box .user-box input:focus ~ label,
+.ticket-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.ticket-box a {
+  
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.ticket-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #03e9f4,
+              0 0 5px #03e9f4,
+              0 0 7px #03e9f4,
+              0 0 10px #03e9f4;
+}
+
+.ticket-box a span {
+  position: absolute;
+  display: block;
+}
+#add,#addfav,#loadFav,#placeo,#checkLoyalty{
+  background-color: #03e9f4;
+  border: none;
+  display: block;
+ 
+  font-size: 1.0em;
+  min-width: 15px;
+  padding: 5px;
+  
+}
+/*.ticket-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.ticket-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.ticket-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.ticket-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}*/
+
+/*current order*/
+.currentOrder {
+  width:100%;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  
+}
+.OrderH {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: rgb(253, 253, 253);
+  text-align: center;
+  font-size: 2.5em;
+}
+.cart-header {
+  font-weight:lighter;
+  font-size: 1.25em;
+  color: rgb(248, 238, 238);
+
+
+  
+}
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(248, 238, 238);
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 75%;
+
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1em;
+  color: rgb(248, 238, 238);
+}
+
+.cart-quantity {
+  width: 35%;
+  
+   color: rgb(248, 238, 238);
+}
+
+.cart-item-title {
+  color: rgb(248, 238, 238);
+  margin-left: .5em;
+  font-size: 1.0em;
+}
+.cart-quantity-input {
+  height: 34px;
+  width: 35px;
+  border-radius: 5px;
+ 
+  color: rgb(248, 238, 238);
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(248, 247, 247);
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: rgb(248, 247, 247);
+  font-size: 1.1em;
+}
+.btn-danger {
+  color: white;
+  background-color:red;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  box-shadow: 0 0 1px #dd1923,
+              0 0 5px #dd1923,
+              0 0 7px #dd1923,
+              0 0 10px #dd1923;
+}
+
+/*//////////////////////////////donation form*/
+.donation-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #ecedf0 60%, #d0cfdd 40.1%);
+}
+
+.donation-container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.Donation-details [type=radio]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.Donation-details [type=radio]+img{
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.Donation-details [type=radio]:checked + img {
+  outline: 5px solid rgb(42, 32, 126);
+}
+.donation-container form .Donation-details img{
+  height: 34px;
+  margin-top: 5px;
+ 
+}
+
+
+
+.donation-container form .Donation-details{
+  margin:15px 0;
+}
+
+.donation-container form  .Donation-details span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.donation-container form .Donation-details input {
+  width: 90%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+.Donation-details select{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.donation-container form .Donation-details input:focus{
+  border:1px solid #000;
+}
+
+.donation-container form  .Donation-flex{
+  display: flex;
+  gap:105px;
+}
+
+.donation-container form  .Donation-flex .Donation-details {
+  margin-top: 5px;
+
+
+  
+}
+
+
+
+.donation-container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #c7cddb;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.donation-container form .submit-btn:hover{
+  background: #312ecc;
+}
+
+.popup-message{
+  width: 400px;
+  background: #95a89d;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: aqua;
+  visibility: hidden;
+}/* js*/
+.openpopup-message{ 
+  visibility:visible;
+  top: 250px;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.popup-message img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.popup-message h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.popup-message button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+
+
+}
