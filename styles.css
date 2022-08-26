@@ -1233,9 +1233,7 @@ footer{
  
 }
 
-.ticket-box .user-box {
- 
-}
+
 
 .ticket-box .user-box input, .ticket-box .user-box p {
   width: 100%;
@@ -1687,4 +1685,41 @@ footer{
   box-shadow: 0 5px 5px rgba(0,0,0,.2);
 
 
+}
+@media (max-width:700px){
+  .last{
+    width: 100%;
+  }
+  .currentOrder{
+    width: auto;
+  }
+  .cart-row{
+    width: 90%;
+    font-size: 10px;
+  }
+  .cart-quantity {
+    font-size: 10px;
+  }
+  .cart-total{
+    width: 100%;
+  }
+  .btn-danger{
+    width: 100%;
+  }
+}
+
+@media (max-width:250px){
+  .last{
+    width: 100%;
+  }
+  .currentOrder{
+    width: 100%;
+  }
+  .cart-row{
+    width: auto;
+    font-size: 30px;
+  }
+  .cart-column {
+    font-size: 10px;
+  }
 }
