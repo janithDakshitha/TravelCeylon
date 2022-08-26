@@ -270,7 +270,7 @@ function Addfavb(){
     alert('Added successfullly ')
     }
     else{
-        alert('unsucs')
+        alert('please fill all required fields')
     }  
 }
 LoadFav.addEventListener("click",loadFav)
