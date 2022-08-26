@@ -185,7 +185,7 @@ function addorder(){
         duration1.checked=true;
     }
     else{
-        alert('slect item')
+        alert('Please fill all the fields')
     }
 }
 
